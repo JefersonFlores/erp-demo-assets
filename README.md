@@ -2,12 +2,14 @@
 
 Repositorio público (solo assets, sin código) para evidencias de los tickets del proyecto privado [erp-demo](https://github.com/JefersonFlores/erp-demo).
 
-Los archivos acá se referencian desde las subpáginas de evidencia en Notion (vía URL raw de GitHub).
+Los archivos acá se referencian desde las subpáginas de evidencia en Notion.
 
 ## Estructura
 
-- `tickets/ERP-N.png` — screenshot principal de cada ticket (Swagger UI o pantalla relevante).
-- `flow/auth-N-*.png` — capturas paso a paso del flujo de autenticación end-to-end (Playwright).
-- `videos/auth-flow.{gif,mp4,webm}` — video del flujo completo: redirect a login → validación → creds inválidas → login OK → home → logout.
+- `tickets/ERP-N.png` — screenshot principal de cada ticket.
+- `flow/auth-N-*.png` — capturas paso a paso del flujo de autenticación.
+- `productos/01-home.png ... 07-eliminado.png` — capturas del CRUD de productos paso a paso.
+- `videos/auth-flow.{gif,mp4,webm}` — flujo de autenticación completo.
+- `videos/productos-crud.{gif,mp4,webm}` — flujo CRUD productos (crear → consultar → editar → eliminar).
 
-Generados con [Playwright](https://playwright.dev/) + [ffmpeg](https://ffmpeg.org/) corriendo contra backend FastAPI + frontend Vite local.
+Generados con [Playwright](https://playwright.dev/) + [ffmpeg](https://ffmpeg.org/).
